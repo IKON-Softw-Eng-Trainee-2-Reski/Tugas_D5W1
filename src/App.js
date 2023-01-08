@@ -5,6 +5,7 @@ import HomePages from "./pages/HomePages";
 import AboutPages from "./pages/AboutPages";
 import TodoPages from "./pages/TodoPages";
 import FormPages from "./pages/FormPages";
+import PageNotFound from "./pages/PageNotFound";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="/about" element={<AboutPages />} />
         <Route path="/todo" element={<TodoPages />} />
         <Route path="/form" element={<FormPages />} />
+        <Route path="*" element={<PageNotFound/>} />
       </Routes>
     </div>
   );
